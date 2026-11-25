@@ -45,8 +45,9 @@ export const Home = () => {
                         </p>
 
                         {/* Action Buttons */}
-                        <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 mb-9">
+                        <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start items-center gap-4 mb-9">
 
+                            {/* View Projects */}
                             <a
                                 href="#projects"
                                 className="group w-full sm:w-auto flex justify-center items-center gap-2 bg-blue-500 text-white py-3 px-7 rounded-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-[0_0_20px_rgba(59,130,246,0.35)]"
@@ -70,12 +71,40 @@ export const Home = () => {
                                 </svg>
                             </a>
 
+                            {/* Contact Me */}
                             <a
                                 href="#contact"
                                 className="w-full sm:w-auto flex justify-center items-center gap-2 border border-blue-500/50 text-blue-500 dark:text-blue-400 py-3 px-7 rounded-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:bg-blue-500/10 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
                             >
                                 Contact Me
                             </a>
+
+                            {/* Download CV */}
+                            <a
+                                href="/Mohanad_Hasan_CV.pdf"
+                                download="Mohanad_Hasan_CV.pdf"
+                                className="group w-full sm:w-auto flex justify-center items-center gap-2 border border-cyan-500/50 text-cyan-600 dark:text-cyan-400 py-3 px-7 rounded-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-500/10 hover:shadow-[0_0_15px_rgba(6,182,212,0.2)]"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="19"
+                                    height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    className="group-hover:translate-y-1 transition-transform"
+                                >
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                    <polyline points="7 10 12 15 17 10" />
+                                    <line x1="12" y1="15" x2="12" y2="3" />
+                                </svg>
+
+                                Download CV
+                            </a>
+
                         </div>
 
                         {/* Social Links */}
