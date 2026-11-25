@@ -59,7 +59,7 @@ export const Contact = () => {
                 import.meta.env.VITE_TEMPLATE_ID,
                 e.currentTarget,
                 {
-                    publicKey: import.meta.env.VITE_PUBLIC_KEY,
+                    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
                 }
             );
 
